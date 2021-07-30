@@ -21,9 +21,11 @@ while (!instance_exists(obj_ashen)) {
 	}
 }
 
+
 //Extras
 instance_create_layer(ID.x, ID.y, "Instances", obj_camera);
 instance_create_layer(ID.x, ID.y, "Instances", obj_crosshair);
+
 
 //Land Occupation Debug Check
 for (var i = 0; i < instance_number(obj_land); i++) {

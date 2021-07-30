@@ -27,7 +27,11 @@ function populatorPlane() {
 		ID = instance_find(obj_land, irandom(count - 1));
 		
 		if ((ID.x >= 1000 && ID.x <= 1200) && (ID.y >= 600 && ID.y <= 2400)) {
-			instance_create_layer(ID.x, ID.y - tileSize / 2, "Instances", obj_planeDowned);
+			obj_control.landingX = ID.x;
+			obj_control.landingY = ID.y - tileSize / 2;
+			
+			instance_create_layer(obj_control.landingX - 1000, obj_control.landingY, "Instances", obj_planeDowned);
+			//CHANGE WHERE PLAYER SPAWNS BEFORE CHANGING X DISTANCE 
 			ID.depth--;
 		}
 	}

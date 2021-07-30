@@ -1,8 +1,12 @@
 /// @description Map Generation
 // You can write your code in this editor
 
+openSequence = true;
+landingX = 0;
+landingY = 0;
+
 //Starting player
-playerAs = 0 //Ashen
+playerAs = 0
 spawnDistance = 512;
 
 //Map & Population Variables
@@ -48,7 +52,6 @@ repeat(primaryLandCount) {
 
 #endregion
 
-//Try using User Events
 obj_water.alarm[0] = 1; //Land Thiccening
 obj_land.alarm[0] = 30; //Adds Beaches
 
@@ -63,6 +66,8 @@ itemSelection = 0;
 
 audioDist = 0;
 audioVol = 0;
+
+
 
 //Ambient Sounds
 audio_play_sound(snd_shore, 0, true); //Calm Seashore - No Copyright Sound Effects - Audio Library

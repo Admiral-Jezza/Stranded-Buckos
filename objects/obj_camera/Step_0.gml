@@ -3,8 +3,16 @@
 
 //Tutorial by: Gamerev Games
 move_towards_point(mouse_x, mouse_y, 0);
-var xTo = playerID.x + lengthdir_x(min(maxDistance, distance_to_point(mouse_x, mouse_y)), direction);
-var yTo = playerID.y + lengthdir_y(min(maxDistance, distance_to_point(mouse_x, mouse_y)), direction);
+
+if (obj_control.openSequence) {
+	var xTo = obj_planeDowned.x + lengthdir_x(min(maxDistance, distance_to_point(mouse_x, mouse_y)), direction);
+	var yTo = obj_planeDowned.y + lengthdir_y(min(maxDistance, distance_to_point(mouse_x, mouse_y)), direction);
+}
+else if (!obj_control.openSequence) {
+	var xTo = playerID.x + lengthdir_x(min(maxDistance, distance_to_point(mouse_x, mouse_y)), direction);
+	var yTo = playerID.y + lengthdir_y(min(maxDistance, distance_to_point(mouse_x, mouse_y)), direction);
+
+}
 
 x += (xTo - x) / 25;
 y += (yTo - y) / 25;

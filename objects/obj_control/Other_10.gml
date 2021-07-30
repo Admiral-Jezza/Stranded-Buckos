@@ -8,12 +8,12 @@ switch(playerAs) {
 	playerID = obj_ashen.id;
 	break;
 	case 1:
-	//playerID = obj_jensen.id;
+	
 	break;
 	case 2:
-	//playerID = obj_cain.id;
+
 	break;
 	case 3:
-	//layerID = obj_brzenska.id;
+
 	break;
 }
