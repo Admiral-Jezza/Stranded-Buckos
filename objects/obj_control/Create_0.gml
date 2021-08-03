@@ -1,9 +1,28 @@
 /// @description Map Generation
 // You can write your code in this editor
 
+#region AIRCRAFT OPTIONS
 openSequence = true;
+
+//Plane Positioning - General Area of Map for plane to land - Arbitary
+landingPointX1 = 1000;
+landingPointX2 = 1200;
+landingPointY1 = 600;
+landingPointY2 = 2400;
+
+stoppedArea = 3
+landingArea = stoppedArea * 2;
+
+airbornX = irandom_range(800, 1600); //How far the plane is from landing - Arbitary
+airbornY = irandom_range(tileSize * stoppedArea - 1, -tileSize * stoppedArea + 1); //Should be no larger than tileSize * 3 - 1 (or + 1 if negative)
+
+startSpeed = 3;
+
+//Plane Positioning (Set from populatorPlane() method, not here)
 landingX = 0;
 landingY = 0;
+
+#endregion
 
 //Starting player
 playerAs = 0
@@ -64,11 +83,9 @@ playerID = noone;
 globalvar itemSelection;
 itemSelection = 0;
 
+//Audio
 audioDist = 0;
 audioVol = 0;
 
-
-
-//Ambient Sounds
 audio_play_sound(snd_shore, 0, true); //Calm Seashore - No Copyright Sound Effects - Audio Library
 

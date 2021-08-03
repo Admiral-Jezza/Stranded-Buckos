@@ -8,8 +8,10 @@ populator(obj_bush, bushCount);
 populator(obj_rock, rockCount);
 
 populatorPlane();
+event_user(0);
 
-withinRadius = ds_list_create();
+/*  //Reserved: Technically starting as plane
+withinRadius = ds_list_create(); 
 collision_circle_list(obj_planeDowned.x, obj_planeDowned.y, sprite_get_height(spr_planeDowned), obj_land, false, true, withinRadius, false);
 
 //Player(s) Spawning
@@ -17,14 +19,14 @@ while (!instance_exists(obj_ashen)) {
 	var ID = ds_list_find_value(withinRadius, irandom(ds_list_size(withinRadius) - 1));
 	if (!ID.occupied && point_distance(ID.x, ID.y, obj_planeDowned.x, obj_planeDowned.y) < spawnDistance) { 
 		instance_create_layer(ID.x, ID.y, "Instances", obj_ashen);
-		event_user(0);
+		event_user(1);
 	}
 }
+*/
 
-
-//Extras
-instance_create_layer(ID.x, ID.y, "Instances", obj_camera);
-instance_create_layer(ID.x, ID.y, "Instances", obj_crosshair);
+//Extras (ID.x/y)
+instance_create_layer(obj_planeDowned.x, obj_planeDowned.y, "Instances", obj_camera);
+instance_create_layer(obj_planeDowned.x, obj_planeDowned.y, "Instances", obj_crosshair);
 
 
 //Land Occupation Debug Check

@@ -8,6 +8,7 @@ draw_set_font(fnt_main);
 draw_set_halign(fa_left);
 
 //Item Boxes
+
 for (var i = array_length(playerID.itemSlots) - 1; i >= 0; i--) { //Loops backwards as the boxes would otherwise overlap incorrectly
 	draw_sprite(spr_box, 0, itemPositions[i] + (sprite_get_width(spr_box) / 2) - offsets[1], camHeightY - sprite_get_height(spr_box) / 2); //Left
 	draw_sprite(spr_box, 1, camHeightX - (sprite_get_width(spr_box) / 2) + offsets[1] - itemPositions[i], camHeightY - sprite_get_height(spr_box) / 2); //Right
@@ -19,6 +20,7 @@ for (var i = array_length(playerID.itemSlots) - 1; i >= 0; i--) { //Loops backwa
 		}
 	}
 }
+
 
 //Item Selector
 draw_sprite(spr_selector, 0, itemPositions[itemSelection] + (sprite_get_width(spr_selector) / 2), camHeightY - sprite_get_height(spr_box) / 2);
@@ -56,6 +58,7 @@ for (var i = 1; i <= 10; i++) {
 
 //DEBUG INFO
 if (debugMode = true) {
+	//Listed
 	draw_text(0, 0, "Debug Info");
 	draw_text(0, 16, "Water Block Count: " + string(instance_number(obj_water)));
 	draw_text(0, 32, "Land Block Count: " + string(instance_number(obj_land)));
