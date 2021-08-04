@@ -9,6 +9,21 @@ if (distance < tileSize * obj_control.stoppedArea) {
 }
 else if (distance < tileSize * obj_control.landingArea) {
 	speed = obj_control.startSpeed / 2;
+	image_index = 1;
+}
+
+if (speed > 0) {
+	objectCount = collision_line_list(x + 50, y - sprite_height / 2, x + 50, y + sprite_height / 2, obj_parent_plants, true, false, objectList, true);
+	if (objectCount > 0) {
+		for (var i = 0; i < objectCount; i++;) {
+			if (object_get_name(objectList[| i].object_index) == "obj_tree") {
+				objectList[| i].image_index = 1;
+			}
+			objectList[| i].depth = obj_planeLeftWing.depth + 1;
+		}		
+	}
+	objectCount = 0;
+	ds_list_clear(objectList);
 }
 
 with (obj_planeLeftWing) {

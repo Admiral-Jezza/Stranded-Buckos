@@ -23,14 +23,14 @@ speedX = speedX * totalSpeed;
 speedY = speedY * totalSpeed;
 
 //This basically smooths out movement when it is about to collide, until it is only going a pixel at a time (sign), then stops exactly at the object.
-if (position_meeting(x + speedX, y, obj_barrierParent)) {
-	while (!place_meeting(x + sign(speedX), y, obj_barrierParent)) {
+if (position_meeting(x + speedX, y, obj_parent_barrier)) {
+	while (!place_meeting(x + sign(speedX), y, obj_parent_barrier)) {
 		x = x + sign(speedX);
 	}
 	speedX = 0;
 }
-if (position_meeting(x, y + speedY, obj_barrierParent)) {
-	while (!place_meeting(x, y + sign(speedY), obj_barrierParent)) {
+if (position_meeting(x, y + speedY, obj_parent_barrier)) {
+	while (!place_meeting(x, y + sign(speedY), obj_parent_barrier)) {
 		y = y + sign(speedY);
 	}
 	speedY = 0;

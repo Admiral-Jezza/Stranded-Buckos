@@ -6,6 +6,9 @@ menuX = display_get_width() / 8;
 menuY = display_get_height() / 2;
 buttonSpacing = 96;
 
+debugMsg = "Debug";
+debugMsgRandom = "Randomization";
+
 currentScreen = 0; //In line with buttonMain[] array
 
 buttonMain[0] = "New Game";

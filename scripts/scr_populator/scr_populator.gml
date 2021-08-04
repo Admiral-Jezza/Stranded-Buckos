@@ -30,7 +30,13 @@ function populatorPlane() {
 			landingX = ID.x;
 			landingY = ID.y - tileSize / 2;
 			
-			instance_create_layer(landingX - airbornX, landingY - airbornY, "Instances", obj_planeDowned);
+			if (obj_control.openSequence) {
+				instance_create_layer(landingX - airbornX, landingY - airbornY, "Instances", obj_planeDowned);
+			}
+			else {
+				instance_create_layer(landingX, landingY, "Instances", obj_planeDowned);
+			}
+			
 			ID.depth--;
 		}
 	}

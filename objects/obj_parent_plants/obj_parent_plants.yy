@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_planeLeftWing",
-    "path": "sprites/spr_planeLeftWing/spr_planeLeftWing.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_parent_barrier",
-    "path": "objects/obj_parent_barrier/obj_parent_barrier.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Areas",
-    "path": "folders/Objects/Areas.yy",
+    "name": "Meta",
+    "path": "folders/Objects/Meta.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_planeLeftWing",
+  "name": "obj_parent_plants",
   "tags": [],
   "resourceType": "GMObject",
 }

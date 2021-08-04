@@ -1,6 +1,15 @@
 /// @description Text Display
 // You can write your code in this editor
 
+if (debugMode && room == rm_mainmenu) {
+	draw_text(x + string_width(debugMsg) / 2, y, debugMsg);	
+	/*
+	if (randomTerrain) {
+		draw_text(x + string_width(debugMsgRandom) / 2, y + string_height(debugMsg), debugMsgRandom);
+	}
+	*/
+}
+
 switch(currentScreen) {
 	case 0:
 		for (var i = 0; i < buttonCount; i++) {

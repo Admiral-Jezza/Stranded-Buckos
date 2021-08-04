@@ -11,8 +11,8 @@
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_barrierParent",
-    "path": "objects/obj_barrierParent/obj_barrierParent.yy",
+    "name": "obj_parent_plants",
+    "path": "objects/obj_parent_plants/obj_parent_plants.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,8 +27,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"parent":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
