@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parent_barrier",
+    "path": "objects/obj_parent_barrier/obj_parent_barrier.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

@@ -1,16 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_ashen",
-    "path": "sprites/spr_ashen/spr_ashen.yy",
+    "name": "spr_char_0",
+    "path": "sprites/spr_char_0/spr_char_0.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
-  "persistent": false,
-  "parentObjectId": {
-    "name": "obj_parent_collision",
-    "path": "objects/obj_parent_collision/obj_parent_collision.yy",
+  "spriteMaskId": {
+    "name": "spr_char_0",
+    "path": "sprites/spr_char_0/spr_char_0.yy",
   },
+  "persistent": false,
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -40,7 +40,7 @@
     "path": "folders/Objects/Characters.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_ashen",
+  "name": "obj_char_0",
   "tags": [],
   "resourceType": "GMObject",
 }

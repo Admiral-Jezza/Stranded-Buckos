@@ -7,7 +7,13 @@ if (debugMode = true) {
 	draw_circle(obj_control.landingX, obj_control.landingY, tileSize * obj_control.stoppedArea, true);	
 	draw_circle(obj_control.landingX, obj_control.landingY, tileSize * obj_control.landingArea, true);
 	
-	draw_line(x + 50, y - sprite_height / 2, x + 50, y + sprite_height / 2);
+	if (obj_control.openSequence) {
+		draw_line(x + 50, y - sprite_height / 2, x + 50, y + sprite_height / 2);
+	}
+	else {
+		draw_rectangle(obj_control.landingX - obj_control.airbornX, obj_control.landingY - obj_control.airbornY - sprite_height / 2, x + 50, y + sprite_height / 2, true);	
+	}
+	
 }
 
 

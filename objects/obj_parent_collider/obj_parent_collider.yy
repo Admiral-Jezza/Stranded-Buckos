@@ -1,10 +1,13 @@
 {
   "spriteId": null,
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parent_barrier",
+    "path": "objects/obj_parent_barrier/obj_parent_barrier.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,7 +28,7 @@
     "path": "folders/Objects/Meta.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_parent_collision",
+  "name": "obj_parent_collider",
   "tags": [],
   "resourceType": "GMObject",
 }
