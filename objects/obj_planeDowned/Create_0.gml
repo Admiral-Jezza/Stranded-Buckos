@@ -17,6 +17,7 @@ speedX = 0;
 speedY = 0;
 sprintExtra = 0;
 isSprinting = false;
+staminaSprintDrain = 1;
 
 itemSlots = [ -1, -1, -1, -1 ];
 

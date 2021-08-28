@@ -43,11 +43,11 @@ for (var i = 1; i <= 10; i++) {
 	//Health & Stamina
 	draw_sprite(spr_heartStamina, (i > healthFrac) + ((i == healthFrac + 1) && frac(playerID._health) > 0), view_camera[targetView] - offsets[1] + (i - 1) * offsets[2], camHeightY - 95);	
 	
-	if (playerID.stamina > 0) {
+	if (playerID.stamina - playerID.staminaSprintDrain > 0) {
 		var iconSubImg = (i > staminaFrac) + ((i == staminaFrac + 1) && frac(playerID.stamina) > 0) + 3;
 	}
 	else {
-		iconSubImg = 6;	
+		iconSubImg = 6;	//No semi-filled or filled version for red energy symbol
 	}
 	draw_sprite(spr_heartStamina, iconSubImg, view_camera[targetView] - offsets[1] + (i - 1) * offsets[2], camHeightY - 75);
 	
@@ -77,7 +77,8 @@ if (debugMode = true) {
 	draw_text(0, 96, "SpeedX: " + string(playerID.speedX));
 	draw_text(0, 112, "SpeedY: " + string(playerID.speedY));
 	draw_text(0, 128, "Ocean Volume: " + string(obj_control.audioVol));
-	draw_text(0, 144, "Item Slots: " + string(playerID.itemSlots[0]) + string(playerID.itemSlots[1]) + string(playerID.itemSlots[2]) + string(playerID.itemSlots[3]));
-	draw_text(0, 160, "Item Selection: " + string(itemSelection));
-	draw_text(0, 176, "Occupied Lands:" + string(obj_control.occupation));
+	draw_text(0, 144, "Volume Setting: " + string(obj_control.audioSetting));
+	draw_text(0, 160, "Item Slots: " + string(playerID.itemSlots[0]) + string(playerID.itemSlots[1]) + string(playerID.itemSlots[2]) + string(playerID.itemSlots[3]));
+	draw_text(0, 176, "Item Selection: " + string(itemSelection));
+	draw_text(0, 192, "Occupied Lands:" + string(obj_control.occupation));
 }

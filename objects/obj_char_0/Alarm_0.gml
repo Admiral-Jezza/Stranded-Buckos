@@ -5,7 +5,7 @@ if (stamina <= 9.5 && isSprinting = false) {
 	stamina = stamina + 0.5;
 }
 else if (isSprinting = true) {
-	stamina = stamina - 2;
+	stamina = stamina - staminaSprintDrain;
 }
 
 if (stamina = 0) {

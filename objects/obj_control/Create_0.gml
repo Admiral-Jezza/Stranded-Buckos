@@ -32,11 +32,17 @@ spawnDistance = 512;
 #macro tileSize 32
 
 primaryLandCount = 30000;
-treeCount = 300;
-bushCount = 100;
-rockCount = 50;
-
+treeCount = irandom_range(200, 400);
+bushCount = irandom_range(50, 150);
+rockCount = irandom_range(50, 100);
 occupation = 0;
+
+tribalCount = irandom_range(16, 32);
+
+enum e_state {
+	idle,
+	chase,
+}
 
 #region BASE MAP GENERATION
 //Tutorial by: Leaf Blower Games (Sebastian)
@@ -86,6 +92,7 @@ itemSelection = 0;
 //Audio
 audioDist = 0;
 audioVol = 0;
+audioSetting = 1;
 
 audio_play_sound(snd_shore, 0, true); //Calm Seashore - No Copyright Sound Effects - Audio Library
 

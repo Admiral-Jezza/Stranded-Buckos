@@ -14,6 +14,7 @@ speedX = 0;
 speedY = 0;
 sprintExtra = 1;
 isSprinting = false;
+staminaSprintDrain = 1;
 
 //Items
 itemSlots = [ 1, 0, -1, -1 ]; //Firewood, Radio, Nothing, Nothing

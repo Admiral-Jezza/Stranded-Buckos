@@ -7,13 +7,16 @@ populator(obj_tree, treeCount);
 populator(obj_bush, bushCount);
 populator(obj_rock, rockCount);
 
+//Enemies
+populator(obj_tribal, tribalCount);
+
+//Plane
 populatorPlane();
 playerID = obj_planeDowned.id;
 
-//Extras (ID.x/y)
+//Extras
 instance_create_layer(obj_planeDowned.x, obj_planeDowned.y, "Instances", obj_camera);
 instance_create_layer(obj_planeDowned.x, obj_planeDowned.y, "Instances", obj_crosshair);
-
 
 //Land Occupation Debug Check
 for (var i = 0; i < instance_number(obj_land); i++) {
